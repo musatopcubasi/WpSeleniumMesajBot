@@ -5,8 +5,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
 
-isim ="23'D"
-mesaj="SAYGILI BİR BİREY OLDUĞUN İÇİN TEŞEKKÜR EDERİM İLBEYCİM"
+isim =""###
+mesaj=""###
 driver = webdriver.Chrome()
 driver.get("https://web.whatsapp.com/")
 driver.maximize_window()
@@ -19,7 +19,7 @@ sayi=0
 while True:
     mesajalani = driver.find_element_by_xpath("//*[@id='main']/footer/div[1]/div[2]/div/div[2]")
     mesajalani.send_keys(mesaj + Keys.ENTER)
-    if sayi==500:
+    if sayi==50:
         break
     sayi+=1
 
